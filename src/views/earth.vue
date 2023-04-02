@@ -5,10 +5,13 @@
 </template>
 
 <script setup lang="ts">
-import Layout from '@/components/layout.vue'
+import Layout from '@/components/layout.vue';
 import { onMounted } from 'vue';
-import * as echarts from 'echarts'
-import 'echarts-gl'
+import baseTextureImage from '@/assets/images/earth/earth.jpg';
+import environmentImage from '@/assets/images/earth/sky.jpg';
+import * as echarts from 'echarts';
+import 'echarts-gl';
+
 
 onMounted(()=>{
     const el=document.getElementById('chartContainer');
@@ -16,9 +19,9 @@ onMounted(()=>{
     const option={
         backgroundColor: '#000',
         globe: {
-            baseTexture: 'src/assets/images/earth/earth.jpg',
+            baseTexture: baseTextureImage,
             shading: 'lambert',
-            environment: 'src/assets/images/earth/sky.jpg',
+            environment: environmentImage,
             atmosphere:{
                 show: true
             },

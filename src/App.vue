@@ -15,16 +15,18 @@
 
 <script setup lang="ts">
 import {useRoute} from 'vue-router'
+import cubeBg from '@/assets/images/cube/bg.jpg'
+import earthBg from '@/assets/images/earth/bg.jpg'
 const route = useRoute();
 const menuList=[
   {
     name: 'cube',
-    imgUrl:'src/assets/images/cube/bg.jpg',
+    imgUrl:cubeBg,
     des:'CSS3实现魔方'
   },
   {
     name: 'earth',
-    imgUrl:'src/assets/images/earth/bg.jpg',
+    imgUrl:earthBg,
     des:'echarts-gl实现地球'
   }  
 ]
