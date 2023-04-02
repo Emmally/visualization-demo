@@ -1,4 +1,4 @@
-import{L as pB}from"./layout-33158ff7.js";import{d as gB,o as mB,c as yB,w as _B,a as xB,p as SB,b as wB,e as TB,_ as bB}from"./index-51fddf64.js";const AB="/assets/earth-839f873a.jpg",CB="/assets/sky-0ff032e7.jpg";/*! *****************************************************************************
+import{L as pB}from"./layout-9cc017dc.js";import{d as gB,o as mB,c as yB,w as _B,a as xB,p as SB,b as wB,e as TB,_ as bB}from"./index-4e3cf622.js";const AB=""+new URL("earth-839f873a.jpg",import.meta.url).href,CB=""+new URL("sky-0ff032e7.jpg",import.meta.url).href;/*! *****************************************************************************
 Copyright (c) Microsoft Corporation.
 
 Permission to use, copy, modify, and/or distribute this software for any
