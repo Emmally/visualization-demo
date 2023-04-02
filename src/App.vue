@@ -18,15 +18,15 @@ import {useRoute} from 'vue-router'
 const route = useRoute();
 const menuList=[
   {
+    name: 'cube',
+    imgUrl:'src/assets/images/cube/bg.jpg',
+    des:'CSS3实现魔方'
+  },
+  {
     name: 'earth',
     imgUrl:'src/assets/images/earth/bg.jpg',
     des:'echarts-gl实现地球'
-  },
-  {
-    name: 'b',
-    imgUrl:'src/assets/images/bg.jpg',
-    des:'B页面'
-  }
+  }  
 ]
 </script>
 

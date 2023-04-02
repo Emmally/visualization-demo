@@ -1,6 +1,6 @@
 <template>
 <layout title="echarts-gl实现地球">
-    <div id="chartContainer" style="width:1000px; height:560px;"></div>
+    <div id="chartContainer" class="chart-container"></div>
 </layout>
 </template>
 
@@ -37,3 +37,9 @@ onMounted(()=>{
 })
 
 </script>
+<style scoped>
+.chart-container{
+    width:1000px;
+    height: 560px;
+}
+</style>

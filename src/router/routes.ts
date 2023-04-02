@@ -5,9 +5,9 @@ const routes=[
         component:()=>import('../views/earth.vue')
     },
     {
-        name:'b',
-        path:'/b',
-        component:()=>import('../views/B.vue')
+        name:'cube',
+        path:'/cube',
+        component:()=>import('../views/cube.vue')
     }
 ]
 export default routes

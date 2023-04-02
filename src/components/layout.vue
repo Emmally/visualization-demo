@@ -1,7 +1,7 @@
 <template>
     <div class="title">{{title}}</div>
-    <div class="container" style="width: 100%;">
-        <slot/>   
+    <div class="container">
+        <slot/>
     </div>
     <div class="button" @click="back"><span>返回主页</span></div>
 </template>
@@ -30,8 +30,8 @@ const back=()=>{
    font-weight: bold;
    margin-bottom:10px;
 }
-.chart-container{
-    width: 100%;
+.container{
+    width:100%;
     height: 100%;
 }
 .button {
