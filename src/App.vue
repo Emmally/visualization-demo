@@ -20,7 +20,7 @@ const menuList=[
   {
     name: 'earth',
     imgUrl:'src/assets/images/earth/bg.jpg',
-    des:'echarts-gl实现地球可视化'
+    des:'echarts-gl实现地球'
   },
   {
     name: 'b',
