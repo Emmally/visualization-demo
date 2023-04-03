@@ -18,6 +18,7 @@ import {useRoute} from 'vue-router'
 import cubeBg from '@/assets/images/cube/bg.jpg'
 import earthBg from '@/assets/images/earth/bg.jpg'
 import lottieBg from '@/assets/images/lottie/bg.png'
+import chartBg from '@/assets/images/chart/bg.jpg'
 const route = useRoute();
 const menuList=[
   {
@@ -34,7 +35,12 @@ const menuList=[
     name: 'lottie',
     imgUrl:lottieBg,
     des:'lottie-web实现动画'
-  }   
+  },
+  {
+    name: 'chart',
+    imgUrl:chartBg,
+    des:'echarts实现图表'
+  }  
 ]
 </script>
 
@@ -43,7 +49,7 @@ const menuList=[
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  justify-items: center;
+  align-content: center;
 }
 .card{
   width: 250px;

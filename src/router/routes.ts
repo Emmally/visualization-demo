@@ -13,6 +13,11 @@ const routes=[
         name:'lottie',
         path:'/lottie',
         component:()=>import('../views/lottie/index.vue')
+    },
+    {
+        name:'chart',
+        path:'/chart',
+        component:()=>import('../views/chart/index.vue')
     }
 ]
 export default routes
