@@ -12,6 +12,7 @@
     "echarts": "^5.4.2",
     "echarts-gl": "^2.0.9",
     "giojs": "^2.2.2",
+    "lottie-web": "^5.10.2",
     "three": "^0.102.1",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"

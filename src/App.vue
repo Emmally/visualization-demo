@@ -17,6 +17,7 @@
 import {useRoute} from 'vue-router'
 import cubeBg from '@/assets/images/cube/bg.jpg'
 import earthBg from '@/assets/images/earth/bg.jpg'
+import lottieBg from '@/assets/images/lottie/bg.png'
 const route = useRoute();
 const menuList=[
   {
@@ -28,7 +29,12 @@ const menuList=[
     name: 'earth',
     imgUrl:earthBg,
     des:'echarts-gl实现地球'
-  }  
+  },
+  {
+    name: 'lottie',
+    imgUrl:lottieBg,
+    des:'lottie-web实现动画'
+  }   
 ]
 </script>
 

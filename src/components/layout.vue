@@ -47,7 +47,7 @@ const back=()=>{
     width: 150px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
+    margin: 10px;
     vertical-align: middle;
 }
 .button span {
