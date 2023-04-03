@@ -1,5 +1,5 @@
 <template>
-  <div v-if="route.path==='/'" class="main-box">
+  <div v-show="route.path==='/'" class="main-box">
     <router-link v-for="item in menuList" :key="item.name" :to="{name: item.name}"> 
       <div class="card">
         <img :src="item.imgUrl" style="width:100%"/>

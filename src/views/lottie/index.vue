@@ -16,7 +16,7 @@ onMounted(()=>{
       container: document.getElementById('animation') as HTMLElement,
       renderer: 'svg',
       loop: true,
-      path: 'src/views/lottie/animation.json',
+      path: './resource/animation.json',
     });
     animate.play();
 })    
