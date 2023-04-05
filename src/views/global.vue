@@ -9,12 +9,12 @@ import Layout from '@/components/layout.vue';
 import {PerspectiveCamera, Scene} from 'three';
 import { CSS3DRenderer, CSS3DObject } from 'three/examples/jsm/renderers/CSS3DRenderer'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import leftScene from '@/assets/images/global/scene/left.svg';
-import rightScene from '@/assets/images/global/scene/right.svg';
-import topScene from '@/assets/images/global/scene/top.svg';
-import bottomScene from '@/assets/images/global/scene/bottom.svg';
-import frontScene from '@/assets/images/global/scene/front.svg';
-import backScene from '@/assets/images/global/scene/back.svg';
+import leftScene from '@/assets/images/global/scene/left.webp';
+import rightScene from '@/assets/images/global/scene/right.webp';
+import topScene from '@/assets/images/global/scene/top.webp';
+import bottomScene from '@/assets/images/global/scene/bottom.webp';
+import frontScene from '@/assets/images/global/scene/front.webp';
+import backScene from '@/assets/images/global/scene/back.webp';
 import { onMounted } from 'vue';
 
 let camera:PerspectiveCamera|null = null;
