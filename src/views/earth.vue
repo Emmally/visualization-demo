@@ -8,7 +8,7 @@
 import Layout from '@/components/layout.vue';
 import { onMounted } from 'vue';
 import baseTextureImage from '@/assets/images/earth/earth.jpg';
-import environmentImage from '@/assets/images/earth/sky.jpg';
+import environmentImage from '@/assets/images/earth/sky.webp';
 import * as echarts from 'echarts';
 import 'echarts-gl';
 

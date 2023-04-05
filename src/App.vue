@@ -15,11 +15,11 @@
 
 <script setup lang="ts">
 import {useRoute} from 'vue-router';
-import cubeBg from '@/assets/images/cube/bg.jpg';
-import earthBg from '@/assets/images/earth/bg.jpg';
-import lottieBg from '@/assets/images/lottie/bg.png';
-import chartBg from '@/assets/images/chart/bg.jpg';
-import globalBg from '@/assets/images/global/bg.jpg';
+import cubeBg from '@/assets/images/cube/bg.webp';
+import earthBg from '@/assets/images/earth/bg.webp';
+import lottieBg from '@/assets/images/lottie/bg.webp';
+import chartBg from '@/assets/images/chart/bg.webp';
+import globalBg from '@/assets/images/global/bg.webp';
 const route = useRoute();
 const menuList=[
   {
