@@ -46,23 +46,23 @@ const menuList=[
     name: 'global',
     imgUrl:globalBg,
     des:'three.js实现VR全景'
-  }  
+  }   
 ]
 </script>
 
 <style scoped>
 .main-box{
-  display: flex;
+  max-width: 1200px;
+  display: grid;
   flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fill,300px);
+  grid-gap:10px;
 }
+
 .card{
-  width: 250px;
-  margin: 8px;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   text-align: center;
-  box-sizing: border-box;
 }
 .txt{
   padding: 10px;
