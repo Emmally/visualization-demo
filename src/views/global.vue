@@ -6,15 +6,22 @@
 
 <script setup lang="ts">
 import Layout from '@/components/layout.vue';
-import {PerspectiveCamera, Scene, Vector3} from 'three';
+import {PerspectiveCamera, Scene} from 'three';
 import { CSS3DRenderer, CSS3DObject } from 'three/examples/jsm/renderers/CSS3DRenderer'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import leftScene from '@/assets/images/global/scene/left.jpg';
+import rightScene from '@/assets/images/global/scene/right.jpg';
+import topScene from '@/assets/images/global/scene/top.jpg';
+import bottomScene from '@/assets/images/global/scene/bottom.jpg';
+import frontScene from '@/assets/images/global/scene/front.jpg';
+import backScene from '@/assets/images/global/scene/back.jpg';
 import { onMounted } from 'vue';
 
-let camera:PerspectiveCamera = null;
-let scene:Scene = null;
-let renderer:CSS3DRenderer = null;
-let controls:OrbitControls = null;
+let camera:PerspectiveCamera|null = null;
+let scene:Scene|null = null;
+let renderer:CSS3DRenderer|null = null;
+let controls:OrbitControls|null = null;
+
 
 const init=()=> {
     const dom = document.getElementById('globalContainer') as HTMLElement;
@@ -24,35 +31,35 @@ const init=()=> {
     camera.lookAt(0,100,100);
    
     scene = new Scene();
-
+   
     const sides = [
         {
-            url: 'src/assets/images/global/left.jpg',
+            url: leftScene,
             position: [ - 1500, 0, 0 ],
             rotation: [ 0, Math.PI / 2, 0 ]
         },
         {
-            url: 'src/assets/images/global/right.jpg',
+            url: rightScene,
             position: [ 1500, 0, 0 ],
             rotation: [ 0, - Math.PI / 2, 0 ]
         },
         {
-            url: 'src/assets/images/global/top.jpg',
+            url: topScene,
             position: [ 0, 1500, 0 ],
             rotation: [ Math.PI / 2, 0, Math.PI ]
         },
         {
-            url: 'src/assets/images/global/bottom.jpg',
+            url: bottomScene,
             position: [ 0, - 1500, 0 ],
             rotation: [ - Math.PI / 2, 0, Math.PI ]
         },
         {
-            url: 'src/assets/images/global/back.jpg',
+            url: backScene,
             position: [ 0, 0, 1500 ],
             rotation: [ 0, Math.PI, 0 ]
         },
         {
-            url: 'src/assets/images/global/front.jpg',
+            url: frontScene,
             position: [ 0, 0, - 1500 ],
             rotation: [ 0, 0, 0 ]
         }
@@ -68,7 +75,7 @@ const init=()=> {
         // 利用 CSS3DObject 将 img 元素转为 3d 物体
         const object = new CSS3DObject( element );
         object.position.fromArray( side.position );
-        object.rotation.fromArray( side.rotation );
+        object.rotation.fromArray( [side.rotation[0], side.rotation[1], side.rotation[2] ]);
         scene.add( object );
     }
     // 创建渲染器
@@ -87,8 +94,8 @@ const init=()=> {
 
 const animate=()=> {
     requestAnimationFrame( animate );
-    controls.update(); 
-    renderer.render( scene, camera );
+    controls?.update(); 
+    renderer?.render( scene!, camera! );
 }
 
 onMounted(()=>{
