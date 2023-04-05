@@ -18,6 +18,11 @@ const routes=[
         name:'chart',
         path:'/chart',
         component:()=>import('../views/chart/index.vue')
+    },
+    {
+        name:'global',
+        path:'/global',
+        component:()=>import('../views/global.vue')
     }
 ]
 export default routes

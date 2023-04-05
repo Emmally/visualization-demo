@@ -14,11 +14,12 @@
 
 
 <script setup lang="ts">
-import {useRoute} from 'vue-router'
-import cubeBg from '@/assets/images/cube/bg.jpg'
-import earthBg from '@/assets/images/earth/bg.jpg'
-import lottieBg from '@/assets/images/lottie/bg.png'
-import chartBg from '@/assets/images/chart/bg.jpg'
+import {useRoute} from 'vue-router';
+import cubeBg from '@/assets/images/cube/bg.jpg';
+import earthBg from '@/assets/images/earth/bg.jpg';
+import lottieBg from '@/assets/images/lottie/bg.png';
+import chartBg from '@/assets/images/chart/bg.jpg';
+import globalBg from '@/assets/images/global/bg.jpg';
 const route = useRoute();
 const menuList=[
   {
@@ -40,6 +41,11 @@ const menuList=[
     name: 'chart',
     imgUrl:chartBg,
     des:'echarts实现图表'
+  },
+  {
+    name: 'global',
+    imgUrl:globalBg,
+    des:'three.js实现VR全景'
   }  
 ]
 </script>

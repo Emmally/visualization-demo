@@ -16,7 +16,7 @@
     </layout>
 </template>
 <script setup lang="ts">
-import Layout from '@/components/layout.vue'
+import Layout from '@/components/layout.vue';
 </script>
 <style scoped>
 .cube-container{
