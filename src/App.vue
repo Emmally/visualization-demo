@@ -46,6 +46,11 @@ const menuList=[
     name: 'global',
     imgUrl:globalBg,
     des:'three.js实现VR全景'
+  },
+  {
+    name: 'community',
+    imgUrl:globalBg,
+    des:'DataV实现智慧社区'
   }   
 ]
 </script>

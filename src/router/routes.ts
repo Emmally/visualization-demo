@@ -23,6 +23,11 @@ const routes=[
         name:'global',
         path:'/global',
         component:()=>import('../views/global.vue')
+    },
+    {
+        name:'community',
+        path:'/community',
+        component:()=>import('../views/community/index.vue')
     }
 ]
 export default routes
