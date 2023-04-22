@@ -25,7 +25,7 @@ const option={
     series: [
     {
       type: 'gauge',
-      data: [ { name: 'itemA', value: 60 } ],
+      data: [ { name: '剩余车位', value: 60 } ],
       axisLabel: {
         formatter: '{value}%'
       },
