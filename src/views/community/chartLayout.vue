@@ -1,12 +1,12 @@
 <template>
-    <BorderBox9 class="box-container">
+    <BorderBox8 class="box-container">
         <div class="title">
-            <Decoration1 style="width:30%;height:30px;" />
+            <Decoration1 class="decoration" />
             <span>{{title}}</span>
-            <Decoration1 style="width:30%;height:30px;" />
+            <Decoration1 class="decoration" />
         </div>
-        <slot/>
-    </BorderBox9>
+        <div class="content"><slot/></div>
+    </BorderBox8>
 </template>
 
 <script lang="ts">
@@ -15,7 +15,7 @@ export default{
 }
 </script>
 <script setup lang="ts" >
-import {  BorderBox9, Decoration1 } from '@kjgl77/datav-vue3';
+import { BorderBox8, Decoration1 } from '@kjgl77/datav-vue3';
 const props = defineProps({
   title: {
     type: String,
@@ -32,7 +32,13 @@ const props = defineProps({
         display: flex;
         justify-content: space-between;
         align-items: center;
-        line-height: 40px;
+    }
+    .decoration{
+        width: 20%;
+        height: 30px;        
+    }
+    .content{
+        height: calc(100% - 40px);
     }
 }
 

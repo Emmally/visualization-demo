@@ -1,14 +1,30 @@
 <template>
    <div id="community-container">
         <FullScreenContainer>
-            <BorderBox11 class="main-container" title="智慧社区">
-                <div class="left-container">
-                    <div class="trisection"><Patrol /></div>
-                    <div class="trisection"><Fees /></div>
-                    <div class="trisection"><ParkingSpaces /></div>
-                </div>
-                <div class="center-container"></div>
-                <div class="right-container"></div>
+            <BorderBox11 title="智慧社区">
+                <div class="main-container">
+                    <div class="left-container">
+                        <div class="trisection"><Patrol /></div>
+                        <div class="trisection"><Fees /></div>
+                        <div class="trisection"><ParkingSpaces /></div>
+                    </div>
+                    <div class="center-container">
+                        <div class="center-top">
+                            <Flow />
+                        </div>
+                        <div class="center-middle">
+                            <Statistics />
+                        </div>
+                        <div class="center-bottom">
+                            <RealTimeInfo />
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="trisection"><Patrol /></div>
+                        <div class="trisection"><Fees /></div>
+                        <div class="trisection"><ParkingSpaces /></div>
+                    </div>
+                </div>                
             </BorderBox11>
         </FullScreenContainer>
    </div>
@@ -19,6 +35,9 @@ import { FullScreenContainer, BorderBox9, BorderBox11 } from '@kjgl77/datav-vue3
 import Patrol from './patrol.vue';
 import Fees from './fees.vue';
 import ParkingSpaces from './parkingSpaces.vue';
+import Flow from './flow.vue';
+import Statistics from './statistics.vue';
+import RealTimeInfo from './realTimeInfo.vue';
 
 
 </script>
@@ -36,33 +55,32 @@ import ParkingSpaces from './parkingSpaces.vue';
         display: flex;
         flex-direction: column;
     }
-    .main-container{    
-        display: flex;
-        flex-direction: column;  
+    .main-container{ 
+        height: 100%;
+        display: grid;
+        grid-template-columns: 25% 1fr 25%;
         padding: 40px 10px 10px; 
         box-sizing: border-box;
-        .border-box-content {
-            padding: 20px;
-            box-sizing: border-box;
-            display: flex;
-        }
+        overflow: hidden;        
     }
-    .left-container,.right-conotener {
-        width: 25%;
-        height: 100%;
-        padding: 10px;
-        box-sizing: border-box;
+    .left-container,.center-container,.right-container{
         display: flex;
-        flex-direction: column;  
-       .trisection {
-            flex: 1;
-        }
+        flex-direction: column;
     }
-    
-    .center-container{
+    .trisection {
         flex: 1;
     }
-
+    .center-top{
+        height: 25%;
+        padding-top: 20px;
+        box-sizing: border-box;
+    }
+    .center-middle{
+        height: 15%;
+    }
+    .center-bottom{
+        flex: 1;
+    }
 }
 
 </style>

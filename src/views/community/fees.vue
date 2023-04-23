@@ -10,7 +10,7 @@ export default{
 }
 </script>
 <script setup lang="ts" >
-import {  Charts } from '@kjgl77/datav-vue3';
+import { Charts } from '@kjgl77/datav-vue3';
 import ChartLayout from './chartLayout.vue';
 
 const option = {
@@ -79,11 +79,3 @@ const option = {
 }
 
 </script>
-
-<style lang="less" scoped>
-.dv-charts-container {
-    height: calc( 100% - 60px );
-    padding: 0 5px;
-    box-sizing: border-box;
-}
-</style>

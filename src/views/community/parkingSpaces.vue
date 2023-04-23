@@ -19,7 +19,7 @@ export default{
 }
 </script>
 <script setup lang="ts" >
-import {  Charts, Decoration2 } from '@kjgl77/datav-vue3';
+import { Charts, Decoration2 } from '@kjgl77/datav-vue3';
 import ChartLayout from './chartLayout.vue';
 const option={
     series: [
@@ -53,7 +53,6 @@ const spaceData = [
 <style lang="less" scoped>
 .parking-space-container{
     display: flex;
-    height: calc( 100% - 60px );
     .left{
         width: 60%;
         .dv-charts-container {
