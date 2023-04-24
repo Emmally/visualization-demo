@@ -50,6 +50,20 @@ const personConfig = [
         name: '樱桃小丸子',
         time: '04/22 10:00',
         isOut: false
+    },
+    {
+        id: 6,
+        url: avatar,
+        name: '樱桃小丸子',
+        time: '04/21 08:00',
+        isOut: true
+    },
+    {
+        id: 7,
+        url: avatar,
+        name: '樱桃小丸子',
+        time: '04/21 10:00',
+        isOut: false
     }
 ]
 const carConfig = [
@@ -82,10 +96,31 @@ const carConfig = [
         isOut: true
     },
     {
-        id: 3,
+        id: 5,
         url: carImg,
         name: '粤ABJ342',
-        time: '04/22 22:00',
+        time: '04/21 22:00',
+        isOut: false
+    },
+    {
+        id: 6,
+        url: carImg,
+        name: '粤ABJ342',
+        time: '04/21 11:00',
+        isOut: false
+    },
+    {
+        id: 7,
+        url: carImg,
+        name: '粤ABJ342',
+        time: '04/20 10:00',
+        isOut: true
+    },
+    {
+        id: 8,
+        url: carImg,
+        name: '粤ABJ342',
+        time: '04/20 22:00',
         isOut: false
     }
 ]
@@ -94,6 +129,6 @@ const carConfig = [
 <style lang="less" scoped>
 .realTimeInfo-container{
     display: flex;
-    height: 100%;
+    height: 100%;   
 }
 </style>

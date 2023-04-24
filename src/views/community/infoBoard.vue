@@ -2,7 +2,7 @@
     <BorderBox8 class="board-container">
         <div class="title">{{ title }}</div>
         <div class="info">
-          <div v-for="item in config" :key="item.id" class="info-item">
+          <div v-for="item in config" :key="item.id" class="info-item autoScroll">
               <img class="pic" :src="item.url">
               <div class="detail">
                 <p>{{ item.name }}</p>
@@ -55,6 +55,10 @@ const props = defineProps({
       display: flex;
       flex-direction: column;
       color:#d4d4d4;
+      position: absolute;
+      width: 100%;
+      height: calc(100% - 40px);
+      overflow: hidden;
       .info-item{
         display: flex;
         padding:5px 10px;
@@ -95,6 +99,37 @@ const props = defineProps({
       .decoration{
         width: 100%;
         height: 5px;
+      }
+
+      .autoScroll{
+        -webkit-animation: autoScroll 8s linear infinite normal;
+        animation: autoScroll 8s linear infinite normal;
+        &:hover{
+          animation-play-state: paused;
+          -webkit-animation-play-state: paused;
+        }
+      }
+
+      @-webkit-keyframes autoScroll {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
+      }
+
+      @keyframes autoScroll {
+        0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+        100% {
+          -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+        }
       }
     }
 }
