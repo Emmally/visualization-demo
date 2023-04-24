@@ -20,9 +20,9 @@
                         </div>
                     </div>
                     <div class="right-container">
-                        <div class="trisection"><Patrol /></div>
-                        <div class="trisection"><Fees /></div>
-                        <div class="trisection"><ParkingSpaces /></div>
+                        <div class="trisection"><PersonGroup /></div>
+                        <div class="trisection"><Repair /></div>
+                        <div class="trisection"><DeviceAlarm /></div>
                     </div>
                 </div>                
             </BorderBox11>
@@ -31,14 +31,16 @@
 </template>
 
 <script setup lang="ts" >
-import { FullScreenContainer, BorderBox9, BorderBox11 } from '@kjgl77/datav-vue3';
+import { FullScreenContainer, BorderBox11 } from '@kjgl77/datav-vue3';
 import Patrol from './patrol.vue';
 import Fees from './fees.vue';
 import ParkingSpaces from './parkingSpaces.vue';
 import Flow from './flow.vue';
 import Statistics from './statistics.vue';
 import RealTimeInfo from './realTimeInfo.vue';
-
+import PersonGroup from './personGroup.vue';
+import Repair from './repair.vue';
+import DeviceAlarm from './deviceAlarm.vue';
 
 </script>
 
@@ -63,7 +65,7 @@ import RealTimeInfo from './realTimeInfo.vue';
         box-sizing: border-box;
         overflow: hidden;        
     }
-    .left-container,.center-container,.right-container{
+    .left-container,.center-container,.right-container{       
         display: flex;
         flex-direction: column;
     }

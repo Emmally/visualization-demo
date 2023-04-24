@@ -20,6 +20,7 @@ import earthBg from '@/assets/images/earth/bg.webp';
 import lottieBg from '@/assets/images/lottie/bg.webp';
 import chartBg from '@/assets/images/chart/bg.webp';
 import globalBg from '@/assets/images/global/bg.webp';
+import communityBg from '@/assets/images/community/bg.webp';
 const route = useRoute();
 const menuList=[
   {
@@ -49,7 +50,7 @@ const menuList=[
   },
   {
     name: 'community',
-    imgUrl:globalBg,
+    imgUrl:communityBg,
     des:'DataV实现智慧社区'
   }   
 ]

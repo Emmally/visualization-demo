@@ -25,9 +25,9 @@ const option = {
         nameTextStyle: {
             fill: '#fff'
         },
-        data: ['1月', '2月', '3月', '4月', '5月', '6月'],
+        data: ['1月', '2月', '3月', '4月', '5月', '6月','7月', '8月', '9月', '10月', '11月', '12月'],
         axisTick:{
-            style: { stroke: '#d4d4d4' }
+            show: false
         },
         axisLabel:{
             style:{ fill: '#fff' }
@@ -41,7 +41,7 @@ const option = {
         nameTextStyle: { fill: '#fff' },
         data: 'value',
         axisTick:{
-            style: { stroke: '#d4d4d4' }
+            show: false
         },
         axisLabel:{
             style:{ fill: '#fff' }
@@ -53,7 +53,7 @@ const option = {
     series: [
         {
         name: '未缴物业费',
-        data: [1200, 2230, 1900, 2100, 3500, 4200],
+        data: [1200, 2230, 1900, 2100, 3500, 4200,1200, 2230, 1900, 2100, 3500, 4200],
         type: 'line',
         stack: 'a',
         fill: {
@@ -65,7 +65,7 @@ const option = {
         },
         {
         name: '已缴物业费',
-        data: [5600, 4570, 4900, 4700, 3300, 2600],
+        data: [5600, 4570, 4900, 4700, 3300, 2600,5600, 4570, 4900, 4700, 3300, 2600],
         type: 'line',
         stack: 'a',
         lineStyle: {

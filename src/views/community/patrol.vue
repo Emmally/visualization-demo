@@ -1,5 +1,5 @@
 <template>
-    <ChartLayout title="巡更占比">
+    <ChartLayout title="本月巡更占比">
         <Charts :option="option" />
     </ChartLayout>
 </template>

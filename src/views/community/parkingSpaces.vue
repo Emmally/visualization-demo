@@ -55,13 +55,9 @@ const spaceData = [
     display: flex;
     .left{
         width: 60%;
-        .dv-charts-container {
-            height: 100%;
-        }
     }
     .right{
         flex-grow: 1;
-        height: 100%;
         color: #c3c3c3;
         flex-direction: column;
         .info{
